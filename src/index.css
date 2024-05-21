@@ -1,0 +1,28 @@
+/* Tailwind Declarations */
+
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LeagueSpartan */
+@font-face {
+    font-family: "LeagueSpartan";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(/public/fonts/LeagueSpartan-Bold.otf) format("opentype");
+}
+
+/* Global Styles */
+
+.container-90 {
+    width: min(1000px, 90vw);
+    margin-inline: auto;
+}
+
+.width-screen-90 {
+    width: 90vw;
+}
