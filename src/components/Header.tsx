@@ -1,4 +1,5 @@
 import useDesktopBreakpoint from "../hooks/use-desktop-breakpoint";
+import AmnishLogo from "./AmnishLogo";
 
 type NavbarLinkProps = {
     label: string;
@@ -61,13 +62,7 @@ export default function Header() {
             )}
 
             {/* Logo */}
-            <a href="#" title="Lightning Amnish">
-                <img
-                    className="w-14 rounded-full"
-                    src="./images/LightningAmnishLogo.png"
-                    alt="AA"
-                />
-            </a>
+            <AmnishLogo />
 
             {/* Social Media */}
             {isDesktop && (

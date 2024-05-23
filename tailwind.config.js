@@ -13,6 +13,9 @@ export default {
                 primary: "#b63e96",
                 primaryDark: "#58e6d9",
             },
+            animation: {
+                "spin-slow": "spin 6s linear infinite",
+            },
         },
     },
     plugins: [],
