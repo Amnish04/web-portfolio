@@ -5,7 +5,7 @@ export default {
         extend: {
             fontFamily: {
                 mont: ["Montserrat"],
-                headings: ["LeagueSpartan"],
+                headings: ["Open Sans", "LeagueSpartan"],
             },
             colors: {
                 light: "#f5f5f5",

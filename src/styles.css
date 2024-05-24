@@ -1,6 +1,12 @@
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* Tailwind Declarations */
 @tailwind base;
 @tailwind components;
@@ -10,7 +16,7 @@
 @font-face {
     font-family: "LeagueSpartan";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-display: swap;
     src: url(/public/fonts/LeagueSpartan-Bold.otf) format("opentype");
 }
@@ -24,4 +30,31 @@
 
 .width-screen-90 {
     width: 90vw;
+}
+
+.width-screen-80 {
+    width: 80vw;
+}
+
+/* Default style for anchor elements */
+a.default-link {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Style for anchor elements on hover */
+a.default-link:hover {
+    color: #0056b3; /* Darker shade of the default color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for active anchor elements */
+a.default-link:active {
+    color: #004085; /* Even darker shade for active state */
+    text-decoration: underline; /* Underline on active */
+}
+
+/* Style for visited anchor elements */
+a.default-link:visited {
+    color: #551a8b; /* Different color for visited links */
 }
