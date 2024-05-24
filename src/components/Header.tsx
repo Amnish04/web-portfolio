@@ -89,7 +89,7 @@ export default function Header() {
                         <SocialMediaLink
                             className="flex-1 min-w-[62px]"
                             label="Gmail"
-                            href="https://dev.to/amnish04"
+                            href="mailto:amnishsingh04@gmail.com"
                             imageUrl="/images/gmail.png"
                         />
                     </nav>

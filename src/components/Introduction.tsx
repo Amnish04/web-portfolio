@@ -158,17 +158,18 @@ const Introduction = () => {
                         <a
                             className="default-link hover:no-underline"
                             href="https://github.com/tarasglek/chatcraft.org"
+                            target="_blank"
                         >
                             ChatCraft
                         </a>
                     </RoughNotation>
                     , an open-source developer oriented AI Chatbot, where I got to work with an
                     incredible team and under the guidance of{" "}
-                    <a className="default-link" href="https://github.com/humphd">
+                    <a className="default-link" href="https://github.com/humphd" target="_blank">
                         my professor
                     </a>{" "}
                     and{" "}
-                    <a className="default-link" href="https://github.com/tarasglek">
+                    <a className="default-link" href="https://github.com/tarasglek" target="_blank">
                         his friend
                     </a>
                     , both having worked in Mozilla and decades of exceptional experience in the
@@ -177,7 +178,7 @@ const Introduction = () => {
             </div>
 
             <img
-                className="w-80 rounded-md lg:col-span-2 col-span-1 shadow-yellow-200 m-auto block order-1 lg:order-none"
+                className="w-80 rounded-md lg:col-span-2 col-span-1 shadow-lg m-auto block order-1 lg:order-none"
                 src="./images/ProfilePicture.jpeg"
                 alt="Amnish's Picture"
             />
