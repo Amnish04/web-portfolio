@@ -21,6 +21,10 @@
     src: url(/public/fonts/LeagueSpartan-Bold.otf) format("opentype");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Global Styles */
 
 .container-90 {

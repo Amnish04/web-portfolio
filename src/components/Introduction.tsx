@@ -13,7 +13,10 @@ const Introduction = () => {
     const yellowShade = "#f8ed62";
 
     return (
-        <article className="width-screen-80 m-auto lg:px-16 grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5 lg:gap-0">
+        <article
+            id="about"
+            className="width-screen-80 m-auto lg:px-16 grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5 lg:gap-0"
+        >
             {/* Intro and Background */}
             <div className="lg:col-span-3 col-span-1 order-2 lg:order-none flex flex-col gap-3">
                 <h2 className="font-headings font-semibold text-3xl">
