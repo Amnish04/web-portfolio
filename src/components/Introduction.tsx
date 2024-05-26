@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { RoughNotation } from "react-rough-notation";
+import Layout from "./Layout";
 
 const Introduction = () => {
     const [showAnimations, setShowAnimations] = useState<boolean>(false);
@@ -13,10 +14,7 @@ const Introduction = () => {
     const yellowShade = "#f8ed62";
 
     return (
-        <article
-            id="about"
-            className="width-screen-80 m-auto lg:px-16 grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5 lg:gap-0"
-        >
+        <Layout id="about" className="grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5 lg:gap-0">
             {/* Intro and Background */}
             <div className="lg:col-span-3 col-span-1 order-2 lg:order-none flex flex-col gap-3">
                 <h2 className="font-headings font-semibold text-3xl">
@@ -185,7 +183,7 @@ const Introduction = () => {
                 src="./images/ProfilePicture.jpeg"
                 alt="Amnish's Picture"
             />
-        </article>
+        </Layout>
     );
 };
 
