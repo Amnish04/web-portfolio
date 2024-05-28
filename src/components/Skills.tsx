@@ -36,8 +36,8 @@ const SkillsGroup = ({ title, skills }: SkillsGroupProps) => {
         <section className="py-3">
             <h3 className="font-mont font-bold text-xl mb-2">{title}</h3>
 
-            {skills.map((skill) => {
-                return <SkillTile skill={skill} />;
+            {skills.map((skill, index) => {
+                return <SkillTile key={`${title}-skill-${index}`} skill={skill} />;
             })}
         </section>
     );
@@ -58,12 +58,12 @@ const Skills = () => {
 
     return (
         <Layout id="skills">
-            <h2 className="font-headings font-semibold text-3xl text-center">Skills</h2>
+            <h2 className="font-headings font-semibold text-4xl text-center">Skills</h2>
 
             <p className="text-center mb-5">What I have learnt over the past few years</p>
 
             {skills.map(({ title, skills }) => (
-                <SkillsGroup title={title} skills={skills} />
+                <SkillsGroup key={`${title}-skills`} title={title} skills={skills} />
             ))}
         </Layout>
     );
