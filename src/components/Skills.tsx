@@ -12,7 +12,7 @@ const SkillTile = ({ skill, containerClassName = "" }: SkillTileProps) => {
     return (
         <a
             href={skill.href}
-            title={`Go to ${skill} documentation`}
+            title={`Go to ${skill.name} documentation`}
             target="_blank"
             className={`flex flex-col gap-2 justify-center items-center w-16 ${containerClassName}`}
         >
@@ -78,8 +78,8 @@ const Skills = () => {
                 transition={{ duration: 0.5 }}
                 className="w-3/5 m-auto bg-dark text-dark h-[2px]"
                 variants={{
-                    hidden: { scaleX: 0 },
-                    inView: { scaleX: 1 },
+                    hidden: { opacity: 0, scaleX: 0 },
+                    inView: { opacity: 1, scaleX: 1 },
                 }}
             />
 
