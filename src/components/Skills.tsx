@@ -1,7 +1,7 @@
+import { motion } from "framer-motion";
 import { useMemo } from "react";
 import { Skill, type Skills } from "../models/Skill";
 import Layout from "./Layout";
-import { DiJavascript } from "react-icons/di";
 
 type SkillTileProps = {
     skill: Skill;
@@ -10,8 +10,11 @@ type SkillTileProps = {
 
 const SkillTile = ({ skill, containerClassName = "" }: SkillTileProps) => {
     return (
-        <div
-            className={`flex flex-col gap-2 justify-center items-center w-32 ${containerClassName}`}
+        <a
+            href={skill.href}
+            title={`Go to ${skill} documentation`}
+            target="_blank"
+            className={`flex flex-col gap-2 justify-center items-center w-16 ${containerClassName}`}
         >
             {/* Icon */}
             {typeof skill.icon === "string" ? (
@@ -22,7 +25,7 @@ const SkillTile = ({ skill, containerClassName = "" }: SkillTileProps) => {
 
             {/* Skill Label */}
             <p>{skill.name}</p>
-        </div>
+        </a>
     );
 };
 
@@ -49,8 +52,14 @@ const Skills = () => {
     const skills: SkillsGroupProps[] = useMemo(
         () => [
             {
-                title: "Web Development",
-                skills: [new Skill("JavaScript", <DiJavascript size={50} color="orange" />)],
+                title: "Front-End Development",
+                skills: [
+                    new Skill({
+                        name: "JavaScript",
+                        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                        href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                    }),
+                ],
             },
         ],
         []
@@ -61,6 +70,18 @@ const Skills = () => {
             <h2 className="font-headings font-semibold text-4xl text-center">Skills</h2>
 
             <p className="text-center mb-5">What I have learnt over the past few years</p>
+
+            <motion.hr
+                viewport={{ once: true }}
+                initial={"hidden"}
+                whileInView={"inView"}
+                transition={{ duration: 0.5 }}
+                className="w-3/5 m-auto bg-dark text-dark h-[2px]"
+                variants={{
+                    hidden: { scaleX: 0 },
+                    inView: { scaleX: 1 },
+                }}
+            />
 
             {skills.map(({ title, skills }) => (
                 <SkillsGroup key={`${title}-skills`} title={title} skills={skills} />
