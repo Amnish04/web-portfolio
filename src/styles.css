@@ -62,3 +62,7 @@ a.default-link:active {
 a.default-link:visited {
     color: #551a8b; /* Different color for visited links */
 }
+
+.modal {
+    width: 80vw;
+}
