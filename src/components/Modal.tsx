@@ -27,6 +27,7 @@ const Modal = ({
 }: ModalProps) => {
     const modalContainer = useRef<HTMLDivElement>(null);
 
+    // Setting up event handler for click outside
     useEffect(() => {
         const handleClickOutside = (evt: MouseEvent) => {
             if (!modalContainer.current?.contains(evt.target as HTMLElement)) {
