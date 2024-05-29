@@ -313,7 +313,7 @@ const Skills = () => {
                     {
                         name: "Azure Devops",
                         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg",
-                        href: "https://aws.amazon.com/devops/what-is-devops/",
+                        href: "https://azure.microsoft.com/en-us/products/devops",
                     },
                 ],
             },
