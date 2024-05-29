@@ -1,4 +1,5 @@
 import CircularText from "./Icons";
+import { motion } from "framer-motion";
 
 const AmnishLogo = () => {
     return (
@@ -11,7 +12,9 @@ const AmnishLogo = () => {
                 href="#"
                 title="Lightning Amnish"
             >
-                <img
+                <motion.img
+                    whileHover={{ scale: 1.125, x: [-5, 5, -5, 5, 0] }}
+                    transition={{ duration: 0.1, type: "just" }}
                     className="w-14 rounded-full"
                     src="./images/LightningAmnishLogo.png"
                     alt="AA"
