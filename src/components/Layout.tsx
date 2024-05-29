@@ -8,8 +8,11 @@ type LayoutProps = {
 
 export default function Layout({ className = "", id, children }: LayoutProps) {
     return (
-        <article className={`width-screen-80 m-auto lg:px-16 ${className}`} id={id ?? undefined}>
+        <article className={`relative width-screen-80 m-auto lg:px-16 ${className}`}>
             {children}
+
+            {/* Anchor to compensate for fixed header at the top */}
+            <span id={id ?? undefined} className="absolute top-[-200px]"></span>
         </article>
     );
 }

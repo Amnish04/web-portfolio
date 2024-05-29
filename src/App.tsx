@@ -8,7 +8,7 @@ function App() {
             <Header />
 
             {/* Contents */}
-            <section className="pt-[162px]">
+            <section className="pt-[165px]">
                 <Introduction />
 
                 <Skills />
