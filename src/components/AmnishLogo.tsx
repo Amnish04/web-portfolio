@@ -17,7 +17,7 @@ const AmnishLogo = () => {
                     whileHover={{ scale: 1.125, x: [-5, 5, -5, 5, 0] }}
                     transition={{ duration: 0.1, type: "just" }}
                     className="w-14 rounded-full"
-                    src="./images/LightningAmnishLogo.png"
+                    src="./images/lightning-amnish-logo.png"
                     alt="AA"
                 />
             </a>

@@ -190,13 +190,13 @@ const Introduction = () => {
             <div className="lg:col-span-2 col-span-1 order-1 lg:order-none flex flex-col items-center justify-center gap-5 sm:gap-10">
                 <img
                     className="w-80 rounded-md shadow-lg block "
-                    src="./images/ProfilePicture.jpeg"
+                    src="./images/profile-picture.jpeg"
                     alt="Amnish's Picture"
                 />
 
                 {/* TODO: Extract this into a reusable component */}
                 <a
-                    href="/docs/Amnish_Web_Resume.pdf"
+                    href="/docs/amnish-web-resume.pdf"
                     target="_blank"
                     title="Get my Resume"
                     className="p-4 border bg-dark text-light rounded-lg flex gap-2 items-center hover:bg-light hover:text-dark border-dark transition-colors duration-200"
