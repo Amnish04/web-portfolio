@@ -76,7 +76,7 @@ const Hamburger = ({ className = "" }: { className?: string }) => {
                             <NavBarLink variant="light" label="Skills" href="#skills" />
                         </li>
                         <li onClick={handleCloseModal}>
-                            <NavBarLink variant="light" label="Projects" href="#" />
+                            <NavBarLink variant="light" label="Projects" href="#projects" />
                         </li>
                         <li onClick={handleCloseModal}>
                             <NavBarLink variant="light" label="Experience" href="#" />
@@ -139,7 +139,7 @@ export default function Header() {
                                 <NavBarLink label="Skills" href="#skills" />
                             </li>
                             <li>
-                                <NavBarLink label="Projects" href="#" />
+                                <NavBarLink label="Projects" href="#projects" />
                             </li>
                             <li>
                                 <NavBarLink label="Experience" href="#" />

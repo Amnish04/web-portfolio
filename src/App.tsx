@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { SkillsProvider } from "./hooks/use-skills";
 
@@ -15,6 +16,8 @@ function App() {
                 <SkillsProvider>
                     <Skills />
                 </SkillsProvider>
+
+                <Projects />
             </section>
         </>
     );
