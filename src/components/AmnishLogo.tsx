@@ -13,6 +13,7 @@ const AmnishLogo = () => {
                 title="Lightning Amnish"
             >
                 <motion.img
+                    animate={{ x: 0 }}
                     whileHover={{ scale: 1.125, x: [-5, 5, -5, 5, 0] }}
                     transition={{ duration: 0.1, type: "just" }}
                     className="w-14 rounded-full"
