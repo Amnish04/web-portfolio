@@ -15,9 +15,9 @@
     margin: 0 2px 50px;
     min-width: 8px;
     height: 60px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 50%;
-    filter: blur(3px);
+    filter: blur(4px);
     animation: smokeFly 5s linear calc(var(--fly-delay-index) * -0.5s) infinite;
     opacity: 0;
 }

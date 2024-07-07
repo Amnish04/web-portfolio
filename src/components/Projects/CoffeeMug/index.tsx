@@ -1,4 +1,5 @@
 import "./CofeeMug.css";
+import { motion } from "framer-motion";
 
 const Smoke = () => {
     return (
@@ -14,7 +15,14 @@ const Smoke = () => {
 
 const CoffeeMug = ({ className = "" }: { className?: string }) => {
     return (
-        <div className={`absolute right-2 bottom-[-3rem] z-10 ${className}`}>
+        <motion.div
+            whileInView={{
+                x: [-300, 0],
+                opacity: [0, 1],
+            }}
+            transition={{ duration: 1, damping: 5, ease: "circOut" }}
+            className={`absolute right-2 bottom-[-3rem] z-10 ${className}`}
+        >
             <img
                 className="w-24 "
                 style={{ transform: "rotateY(180deg)" }}
@@ -23,7 +31,7 @@ const CoffeeMug = ({ className = "" }: { className?: string }) => {
             />
 
             <Smoke />
-        </div>
+        </motion.div>
     );
 };
 
