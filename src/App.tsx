@@ -1,7 +1,8 @@
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
-import Projects from "./components/Projects";
+import ProjectsList from "./components/Projects";
 import Skills from "./components/Skills";
+import { ProjectsProvider } from "./hooks/use-projects";
 import { SkillsProvider } from "./hooks/use-skills";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
                     <Skills />
                 </SkillsProvider>
 
-                <Projects />
+                <ProjectsProvider>
+                    <ProjectsList />
+                </ProjectsProvider>
             </section>
         </>
     );

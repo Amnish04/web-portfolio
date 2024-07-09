@@ -1,10 +1,23 @@
+import { FC } from "react";
+import { useProjects } from "../../hooks/use-projects";
+import { Project } from "../../models/Project";
 import Layout from "../Layout";
 import CoffeeMug from "./CoffeeMug";
 import "./Projects.css";
 
-const Projects = () => {
+type ProjectCardProps = {
+    project: Project;
+};
+
+const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
+    return <div>{project.name}</div>;
+};
+
+const ProjectsList = () => {
+    const projects = useProjects();
+
     return (
-        <Layout id={"projects"} className="min-h-screen">
+        <Layout id={"projects"}>
             <h2 className="font-headings font-semibold text-4xl text-center mt-2">Projects</h2>
 
             {/* Programmer with Coffee, not showing on mobile */}
@@ -17,8 +30,15 @@ const Projects = () => {
                     <CoffeeMug />
                 </div>
             </div>
+
+            {/* List of Projects */}
+            <div>
+                {projects.map((project, index) => (
+                    <ProjectCard key={`project-${index}`} project={project} />
+                ))}
+            </div>
         </Layout>
     );
 };
 
-export default Projects;
+export default ProjectsList;

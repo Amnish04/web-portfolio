@@ -22,6 +22,7 @@ const CoffeeMug = ({ className = "" }: { className?: string }) => {
             }}
             transition={{ duration: 1, damping: 5, ease: "circOut" }}
             className={`absolute right-2 bottom-[-3rem] z-10 ${className}`}
+            title="Programmer Fuel"
         >
             <img
                 className="w-24 "
