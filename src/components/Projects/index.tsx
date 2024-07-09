@@ -20,22 +20,30 @@ const ProjectsList = () => {
         <Layout id={"projects"}>
             <h2 className="font-headings font-semibold text-4xl text-center mt-2">Projects</h2>
 
-            {/* Programmer with Coffee, not showing on mobile */}
-            <div className="float-left hidden md:block mt-24">
-                <div className="relative">
-                    {/* Programmer */}
-                    <img className="w-72" src="/images/programmer-desk.png" alt="Cool Programmer" />
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                {/* Programmer with Coffee, not showing on mobile */}
+                <div className="hidden md:block mt-24">
+                    <div className="sticky left-0 top-[166px]">
+                        <div className="relative w-max">
+                            {/* Programmer */}
+                            <img
+                                className="w-72"
+                                src="/images/programmer-desk.png"
+                                alt="Cool Programmer"
+                            />
 
-                    {/* His Coffee */}
-                    <CoffeeMug />
+                            {/* His Coffee */}
+                            <CoffeeMug />
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            {/* List of Projects */}
-            <div>
-                {projects.map((project, index) => (
-                    <ProjectCard key={`project-${index}`} project={project} />
-                ))}
+                {/* List of Projects */}
+                <div>
+                    {projects.map((project, index) => (
+                        <ProjectCard key={`project-${index}`} project={project} />
+                    ))}
+                </div>
             </div>
         </Layout>
     );
