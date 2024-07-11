@@ -4,3 +4,23 @@
     height: 150px; /* Adjust based on your design */
     margin: 0 auto; /* Center it horizontally on the page */
 }
+
+.project-info-overlay {
+    transition: all 250ms linear;
+}
+
+.project-card:hover .project-info-overlay {
+    transform: translateY(0);
+}
+
+/* Medium Screens */
+
+@media screen and (min-width: 768px) {
+    .project-card h3 {
+        transition: 300ms;
+    }
+
+    .project-card:hover h3 {
+        color: whitesmoke;
+    }
+}

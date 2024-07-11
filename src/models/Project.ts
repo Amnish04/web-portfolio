@@ -1,6 +1,6 @@
 export class Project {
     public name: string;
-    public descriptionPoints: string;
+    public description: string;
     public technologiesUsed: string[];
     public imageUrl: string;
     public githubLink: string;
@@ -8,14 +8,14 @@ export class Project {
 
     constructor(
         name: string,
-        descriptionPoints: string,
+        description: string,
         technologiesUsed: string[],
         imageUrl: string = "",
         githubLink: string = "",
         deployedLink: string = ""
     ) {
         this.name = name;
-        this.descriptionPoints = descriptionPoints;
+        this.description = description;
         this.technologiesUsed = technologiesUsed;
         this.imageUrl = imageUrl;
         this.githubLink = githubLink;
