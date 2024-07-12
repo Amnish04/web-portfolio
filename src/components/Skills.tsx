@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 import { SkillsGroup, useSkills } from "../hooks/use-skills";
+import { useUrlFragment } from "../hooks/use-url-fragment";
 import { Skill, type Skills } from "../models/Skill";
 import Layout from "./Layout";
 
@@ -12,6 +14,12 @@ type SkillTileProps = {
 const SKILL_TILE_TITLE_DURATION = 0.5; // seconds
 
 const SkillTile = ({ skill, animationDelay = 0, containerClassName = "" }: SkillTileProps) => {
+    const fragment = useUrlFragment();
+
+    const highlightTile = useMemo(() => {
+        return fragment.slice(1).toLowerCase() === `skill-${skill.name.toLowerCase()}`;
+    }, [skill.name, fragment]);
+
     return (
         <motion.a
             whileInView={{ x: [-25, 0], opacity: [0, 1] }}
@@ -25,7 +33,7 @@ const SkillTile = ({ skill, animationDelay = 0, containerClassName = "" }: Skill
             href={skill.href}
             title={`Go to ${skill.name} documentation`}
             target="_blank"
-            className={`flex flex-col gap-2 justify-between items-center w-16 ${containerClassName}`}
+            className={`relative flex flex-col gap-2 justify-between items-center w-16 ${highlightTile ? "outline outline-light outline-offset-8 outline-1" : ""} ${containerClassName}`}
         >
             {/* Icon */}
             {typeof skill.icon === "string" ? (
@@ -36,6 +44,9 @@ const SkillTile = ({ skill, animationDelay = 0, containerClassName = "" }: Skill
 
             {/* Skill Label */}
             <p className="font-medium text-center">{skill.name}</p>
+
+            {/* Anchor to compensate for fixed header at the top */}
+            <span id={`skill-${skill.name}`} className="absolute top-[-200px]"></span>
         </motion.a>
     );
 };
@@ -68,7 +79,7 @@ const SkillsGroupSection = ({ title, skills }: SkillsGroup) => {
 };
 
 const Skills = () => {
-    const skills: SkillsGroup[] = useSkills();
+    const { skills } = useSkills();
 
     return (
         <div className="bg-[url('/images/skills-background.gif')] text-light py-5">
