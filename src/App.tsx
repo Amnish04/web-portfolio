@@ -16,11 +16,11 @@ function App() {
 
                 <SkillsProvider>
                     <Skills />
-                </SkillsProvider>
 
-                <ProjectsProvider>
-                    <ProjectsList />
-                </ProjectsProvider>
+                    <ProjectsProvider>
+                        <ProjectsList />
+                    </ProjectsProvider>
+                </SkillsProvider>
             </section>
         </>
     );

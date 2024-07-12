@@ -9,7 +9,7 @@ export const ProjectsProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const value = [
         new Project(
             "Dine-A-Night",
-            "A highly customizable restaurant reservation application, allowing restaurant owners to sign up and build dynamic restaurant layouts, customers to make reservations at restaurants with the ability to visually select where they sit, and admins to monitor and analyze upcoming and historical reservations",
+            "A restaurant reservation application, where owners can sign up and build dynamic restaurant layouts, customers can make reservations while selecting where they sit, and admins to monitor and analyze upcoming and historical reservations.",
             [
                 "Angular",
                 "Express.js",
@@ -24,7 +24,7 @@ export const ProjectsProvider: FC<{ children: ReactNode }> = ({ children }) => {
         ),
         new Project(
             "Raggy Chats",
-            "Raggy Chats is a lightweight AI chatbot, focusing specifically on Retrieval Augemented Generation (RAG), with your documents' embeddings stored locally in IndexedDB. Users upload documents relevant to the context of their queries, and Raggy Chats conducts semantic search on documents' content, ranks the most relevant chunks using Cosine Similarity, and augments the original query with retrieved context from uploaded documents.",
+            "Raggy Chats is an AI chatbot, focusing specifically on Retrieval Augmented Generation (RAG). Users upload documents for context, and Raggy Chats conducts semantic search on the content, ranks the most relevant chunks using Cosine Similarity, and augments the original query.",
             ["OpenAI", "Retrieval Augmented Generation", "React", "Vite", "Chakra UI"],
             "/images/raggy-chats_poster.png",
             "https://github.com/Amnish04/raggy-chats",
@@ -33,7 +33,7 @@ export const ProjectsProvider: FC<{ children: ReactNode }> = ({ children }) => {
         new Project(
             "Sugary Pills",
             "A comprehensive web application that effectively gathers diabetes-related data through a quick survey. The collected data is fed to an interactive reporting system, that generates dynamic graphs, on the fly, based on lifestyle choice filters.",
-            ["Angular", "Express.js", "PostgreSQL", "Hackathon"],
+            ["Angular", "Express.js", "Postgres SQL", "Hackathon"],
             "/images/sugary-pills_poster.png",
             "https://github.com/Amnish04/SugaryPills.UI",
             "https://dia-ui.firebaseapp.com/home"
