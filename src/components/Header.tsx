@@ -79,7 +79,7 @@ const Hamburger = ({ className = "" }: { className?: string }) => {
                             <NavBarLink variant="light" label="Projects" href="#projects" />
                         </li>
                         <li onClick={handleCloseModal}>
-                            <NavBarLink variant="light" label="Experience" href="#" />
+                            <NavBarLink variant="light" label="Experience" href="#experience" />
                         </li>
                     </ul>
                 </div>
@@ -142,7 +142,7 @@ export default function Header() {
                                 <NavBarLink label="Projects" href="#projects" />
                             </li>
                             <li>
-                                <NavBarLink label="Experience" href="#" />
+                                <NavBarLink label="Experience" href="#experience" />
                             </li>
                         </ul>
                     </nav>
