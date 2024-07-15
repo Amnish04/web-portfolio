@@ -1,36 +1,10 @@
-import { FC, useMemo } from "react";
+import { FC } from "react";
 import { useProjects } from "../../hooks/use-projects";
 import { Project } from "../../models/Project";
 import Layout from "../Layout";
 import CoffeeMug from "./CoffeeMug";
 import "./Projects.css";
-import { useSkills } from "../../hooks/use-skills";
-
-type TechnologyPillProps = {
-    technology: string;
-    variant?: "light" | "dark";
-};
-
-const TechnologyPill: FC<TechnologyPillProps> = ({ technology, variant = "dark" }) => {
-    const { getSkillByName } = useSkills();
-
-    const hyperLinkableSkill = useMemo(
-        () => getSkillByName(technology),
-        [getSkillByName, technology]
-    );
-
-    return (
-        <span
-            className={`mr-2 border rounded-full px-2 py-1 ${variant === "dark" ? "border-dark" : ""} ${hyperLinkableSkill ? (variant === "light" ? "hover:bg-light hover:bg-opacity-20 focus:bg-light focus:bg-opacity-20" : "hover:bg-dark hover:bg-opacity-5 focus:bg-dark focus:bg-opacity-5") : ""}`}
-        >
-            {hyperLinkableSkill === null ? (
-                technology
-            ) : (
-                <a href={`#skill-${hyperLinkableSkill.name}`}>{technology}</a>
-            )}
-        </span>
-    );
-};
+import TechnologyPill from "../shared/TechnologyPill";
 
 type ProjectCardProps = {
     project: Project;

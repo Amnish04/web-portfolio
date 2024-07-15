@@ -7,14 +7,15 @@ import Skills from "./components/Skills";
 function App() {
     return (
         <>
+            {/* Fixed header with 165px height */}
             <Header />
 
             {/* Contents */}
             <section className="pt-[165px]">
                 <Introduction />
+                <ExperienceSection />
                 <Skills />
                 <ProjectsList />
-                <ExperienceSection />
             </section>
         </>
     );

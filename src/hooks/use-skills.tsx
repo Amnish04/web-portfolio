@@ -278,9 +278,7 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
             return (
                 Array.from(skillsList).find(
-                    (skill) =>
-                        skill.name.toLowerCase().includes(skillName.toLowerCase()) ||
-                        skillName.toLowerCase().includes(skill.name.toLowerCase())
+                    (skill) => skill.name.toLowerCase() === skillName.toLowerCase()
                 ) ?? null
             );
         },
