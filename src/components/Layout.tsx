@@ -8,7 +8,7 @@ type LayoutProps = {
 
 export default function Layout({ className = "", id, children }: LayoutProps) {
     return (
-        <article className={`relative min-h-screen width-screen-80 m-auto lg:px-16 ${className}`}>
+        <article className={`relative width-screen-80 m-auto lg:px-16 ${className}`}>
             {children}
 
             {/* Anchor to compensate for fixed header at the top */}
