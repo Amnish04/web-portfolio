@@ -155,17 +155,28 @@ const AboutMeContent = () => {
                         className="default-link hover:no-underline"
                         href="https://github.com/tarasglek/chatcraft.org"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         ChatCraft
                     </a>
                 </RoughNotation>
                 , an open-source developer oriented AI Chatbot, where I got to work with an
                 incredible team and under the guidance of{" "}
-                <a className="default-link" href="https://github.com/humphd" target="_blank">
+                <a
+                    className="default-link"
+                    href="https://github.com/humphd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     my professor
                 </a>{" "}
                 and{" "}
-                <a className="default-link" href="https://github.com/tarasglek" target="_blank">
+                <a
+                    className="default-link"
+                    href="https://github.com/tarasglek"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     his friend
                 </a>
                 , both having worked in Mozilla and decades of exceptional experience in the field
@@ -198,6 +209,7 @@ const Introduction = () => {
                 <a
                     href="/docs/amnish-web-resume.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="Get my Resume"
                     className="p-4 border bg-dark text-light rounded-lg flex gap-2 items-center hover:bg-light hover:text-dark border-dark transition-colors duration-200"
                 >

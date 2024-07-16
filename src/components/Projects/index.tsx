@@ -52,6 +52,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                             className="px-3 py-1 border border-dark inline-flex gap-1 items-center rounded-md hover:bg-dark hover:bg-opacity-5 focus:bg-dark focus:bg-opacity-5"
                             href={project.deployedLink}
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Visit
                             <i className="devicon-cloudflare-plain"></i>
@@ -60,6 +61,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                             className="px-3 py-1 border border-dark inline-flex gap-1 items-center rounded-md hover:bg-dark hover:bg-opacity-5 focus:bg-dark focus:bg-opacity-5"
                             href={project.githubLink}
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             GitHub
                             <i className="devicon-github-original"></i>
@@ -92,6 +94,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                                     className="px-3 py-1 border border-light inline-flex gap-1 items-center rounded-md hover:bg-light hover:bg-opacity-20 focus:bg-light focus:bg-opacity-20"
                                     href={project.deployedLink}
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Visit
                                     <i className="devicon-cloudflare-plain"></i>
@@ -100,6 +103,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                                     className="px-3 py-1 border border-light inline-flex gap-1 items-center rounded-md hover:bg-light hover:bg-opacity-20 focus:bg-light focus:bg-opacity-20"
                                     href={project.githubLink}
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     GitHub
                                     <i className="devicon-github-original"></i>
