@@ -35,6 +35,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ experience, containerClass = 
                     <a
                         className="flex items-center gap-1 group-hover:text-blue-800 group-active:text-blue-800 transition duration-300"
                         href={experience.companyWebsiteLink}
+                        onClick={(evt) => evt.stopPropagation()}
                         target={"_blank"}
                         rel={"noopener noreferrer"}
                     >
@@ -74,16 +75,19 @@ const ExperienceSection = () => {
     const experiences = useExperiences();
 
     return (
-        <Layout id={"experience"} className="min-h-screen">
-            <h2 className="font-headings font-semibold text-4xl text-center py-4">Experience</h2>
+        <Layout id={"experience"} className="py-10">
+            <h2 className="font-headings font-semibold text-4xl text-center mb-12">Experience</h2>
 
             <div className="grid grid-cols-6">
-                <div className="col-span-1 hidden sm:block">
+                <div className="col-span-1 hidden sm:flex justify-center">
                     {/* Dashed Line */}
-                    <span className="h-full"></span>
+                    <span className="h-full border-r-2 border-slate-500 translate-x-2 border-dashed"></span>
+                    <span className="sticky top-[190px] -rotate-[45deg] animate-pulse scale-[2] self-start">
+                        🚀
+                    </span>
                 </div>
 
-                <div className="col-span-full sm:col-span-5">
+                <div className="col-span-full sm:col-span-5 flex flex-col gap-5">
                     {experiences.map((experience, index) => (
                         <ExperienceCard
                             key={`experience-${experience.companyName}-${experience.positionTitle}-${index}`}

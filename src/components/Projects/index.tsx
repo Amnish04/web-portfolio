@@ -117,7 +117,7 @@ const ProjectsList = () => {
     const projects = useProjects();
 
     return (
-        <Layout id={"projects"}>
+        <Layout id={"projects"} className="py-10">
             <h2 className="font-headings font-semibold text-4xl text-center mt-2">Projects</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-5">
