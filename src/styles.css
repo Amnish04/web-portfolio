@@ -66,3 +66,21 @@ a.default-link:visited {
 .modal {
     width: 80vw;
 }
+
+.animate-pulse {
+    animation: pulse 1500ms linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.25;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
