@@ -33,6 +33,7 @@ const SkillTile = ({ skill, animationDelay = 0, containerClassName = "" }: Skill
             href={skill.href}
             title={`Go to ${skill.name} documentation`}
             target="_blank"
+            rel="noopener noreferrer"
             className={`relative flex flex-col gap-2 justify-between items-center w-16 ${highlightTile ? "outline outline-light outline-offset-8 outline-1" : ""} ${containerClassName}`}
         >
             {/* Icon */}

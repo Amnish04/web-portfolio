@@ -37,6 +37,7 @@ const SocialMediaLink = ({ label, imageUrl, href, icon, className = "" }: Social
             className={`flex flex-col justify-center items-center ${className}`}
             href={href}
             target="_blank"
+            rel="noopener noreferrer"
         >
             {icon ? icon : <img className="w-8 rounded-sm" src={imageUrl} alt="Github Link" />}
             <p className="text-sm">{label}</p>
