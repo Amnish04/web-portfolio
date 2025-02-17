@@ -201,7 +201,7 @@ const Introduction = () => {
             <div className="lg:col-span-2 col-span-1 order-1 lg:order-none flex flex-col items-center justify-center gap-5 sm:gap-10">
                 <img
                     className="w-80 rounded-md shadow-lg block "
-                    src="./images/profile-picture.jpeg"
+                    src="./images/profile.jpeg"
                     alt="Amnish's Picture"
                 />
 
