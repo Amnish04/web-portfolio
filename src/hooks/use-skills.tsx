@@ -253,7 +253,7 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                         href: "https://github.com/",
                     },
                     {
-                        name: "Gihub Codespaces",
+                        name: "Github Codespaces",
                         icon: <i className="devicon-githubcodespaces-plain text-[4rem]"></i>,
                         href: "https://github.com/features/codespaces",
                     },
