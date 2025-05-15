@@ -10,22 +10,24 @@ const AboutMeContent = () => {
         setShowAnimations(true);
     }, []);
 
-    const purpleShade = "#c3b3ff";
-    const orangeShade = "#ffd7b5";
-    const yellowShade = "#f8ed62";
+    const PURPLE_SHADE = "#e4c7fc";
+    const ORANGE_SHADE = "#ffd7b5";
+    const YELLOW_SHADE = "#fff899";
+    const BLUE_SHADE = "#c3faaf";
+    const PINK_SHADE = "#f7c6d6";
 
     return (
         <>
             <p>
-                I am a young and passionate software developer, with a diverse skillset and a hunger
-                for solving problems.
+                I am a young and passionate software developer, with a diverse skillset and
+                experience in large enterprises and fast-paced startups.
             </p>
 
             <p>
-                I recently graduated from Seneca College with{" "}
+                I graduated from Seneca College with{" "}
                 <SafeRoughNotation
                     type="highlight"
-                    color={orangeShade}
+                    color={ORANGE_SHADE}
                     show={showAnimations}
                     animate
                     animationDelay={200}
@@ -52,18 +54,8 @@ const AboutMeContent = () => {
                     animate
                     animationDelay={1000}
                 >
-                    Cloud
+                    Cloud Computing
                 </SafeRoughNotation>{" "}
-                <SafeRoughNotation
-                    type="underline"
-                    color={"blue"}
-                    iterations={1}
-                    show={showAnimations}
-                    animate
-                    animationDelay={1000}
-                >
-                    Computing
-                </SafeRoughNotation>
                 ,{" "}
                 <SafeRoughNotation
                     type="underline"
@@ -84,16 +76,33 @@ const AboutMeContent = () => {
                     animate
                     animationDelay={1800}
                 >
-                    IOS Development
+                    iOS Development
                 </SafeRoughNotation>{" "}
                 by not only reading theory, but actually building meaningful projects.
+            </p>
+
+            <p>
+                Last year, I joined{" "}
+                <SafeRoughNotation
+                    type="highlight"
+                    color={BLUE_SHADE}
+                    show={showAnimations}
+                    animate
+                    animationDelay={3400}
+                >
+                    DeepStructure
+                </SafeRoughNotation>{" "}
+                , a VC-backed tech startup focused on building an AI infrastructure platform. At
+                DeepStructure, I played a key role in developing core components of our AI
+                solutions, while working with cutting-edge technologies, prompt engineering, and
+                taking on various R&D quests.
             </p>
 
             <p>
                 I've built several side projects in my development journey and have experience{" "}
                 <SafeRoughNotation
                     type="highlight"
-                    color={purpleShade}
+                    color={PURPLE_SHADE}
                     show={showAnimations}
                     animate
                     animationDelay={2200}
@@ -103,7 +112,7 @@ const AboutMeContent = () => {
                 ,{" "}
                 <SafeRoughNotation
                     type="highlight"
-                    color={yellowShade}
+                    color={YELLOW_SHADE}
                     show={showAnimations}
                     animate
                     animationDelay={2600}
@@ -113,7 +122,7 @@ const AboutMeContent = () => {
                 and{" "}
                 <SafeRoughNotation
                     type="highlight"
-                    color={"pink"}
+                    color={PINK_SHADE}
                     show={showAnimations}
                     animate
                     animationDelay={3000}
@@ -126,22 +135,8 @@ const AboutMeContent = () => {
             </p>
 
             <p>
-                A few months ago, I started doing{" "}
-                <SafeRoughNotation
-                    type="highlight"
-                    color={purpleShade}
-                    show={showAnimations}
-                    animate
-                    animationDelay={3400}
-                >
-                    Open-Source
-                </SafeRoughNotation>
-                {"  "}, participated in Hacktoberfest 2023 and contributed to various projects on
-                issues ranging from UI to Debugging to Devops.
-            </p>
-
-            <p>
-                My best experience so far has been working on{" "}
+                I've also been contributing to various open-source projects and one of my best
+                experiences has been working on{" "}
                 <SafeRoughNotation
                     type="circle"
                     padding={5}
