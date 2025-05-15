@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { RoughNotation } from "react-rough-notation";
 import Layout from "./Layout";
+import SafeRoughNotation from "./SafeRoughNotation";
 
 const AboutMeContent = () => {
     const [showAnimations, setShowAnimations] = useState<boolean>(false);
@@ -23,7 +23,7 @@ const AboutMeContent = () => {
 
             <p>
                 I recently graduated from Seneca College with{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="highlight"
                     color={orangeShade}
                     show={showAnimations}
@@ -31,9 +31,9 @@ const AboutMeContent = () => {
                     animationDelay={200}
                 >
                     High Honors
-                </RoughNotation>
+                </SafeRoughNotation>
                 &nbsp;in a 3 years Computer Science program, where I learnt about{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="underline"
                     color={"blue"}
                     iterations={1}
@@ -42,9 +42,9 @@ const AboutMeContent = () => {
                     animationDelay={600}
                 >
                     Web Development,
-                </RoughNotation>
+                </SafeRoughNotation>
                 &nbsp;
-                <RoughNotation
+                <SafeRoughNotation
                     type="underline"
                     color={"blue"}
                     iterations={1}
@@ -53,8 +53,8 @@ const AboutMeContent = () => {
                     animationDelay={1000}
                 >
                     Cloud
-                </RoughNotation>{" "}
-                <RoughNotation
+                </SafeRoughNotation>{" "}
+                <SafeRoughNotation
                     type="underline"
                     color={"blue"}
                     iterations={1}
@@ -63,9 +63,9 @@ const AboutMeContent = () => {
                     animationDelay={1000}
                 >
                     Computing
-                </RoughNotation>
+                </SafeRoughNotation>
                 ,{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="underline"
                     color="blue"
                     iterations={1}
@@ -74,9 +74,9 @@ const AboutMeContent = () => {
                     animationDelay={1400}
                 >
                     Databases
-                </RoughNotation>{" "}
+                </SafeRoughNotation>{" "}
                 and basic{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="underline"
                     iterations={1}
                     color="blue"
@@ -85,13 +85,13 @@ const AboutMeContent = () => {
                     animationDelay={1800}
                 >
                     IOS Development
-                </RoughNotation>{" "}
+                </SafeRoughNotation>{" "}
                 by not only reading theory, but actually building meaningful projects.
             </p>
 
             <p>
                 I've built several side projects in my development journey and have experience{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="highlight"
                     color={purpleShade}
                     show={showAnimations}
@@ -99,9 +99,9 @@ const AboutMeContent = () => {
                     animationDelay={2200}
                 >
                     architecting
-                </RoughNotation>{" "}
+                </SafeRoughNotation>{" "}
                 ,{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="highlight"
                     color={yellowShade}
                     show={showAnimations}
@@ -109,9 +109,9 @@ const AboutMeContent = () => {
                     animationDelay={2600}
                 >
                     planning
-                </RoughNotation>{" "}
+                </SafeRoughNotation>{" "}
                 and{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="highlight"
                     color={"pink"}
                     show={showAnimations}
@@ -119,7 +119,7 @@ const AboutMeContent = () => {
                     animationDelay={3000}
                 >
                     leading
-                </RoughNotation>{" "}
+                </SafeRoughNotation>{" "}
                 a team of developers to build a complex distributed system leveraging services
                 offered by major cloud platforms like Google Cloud, Firebase, MongoDB Atlas, and an
                 open source geocoding service.
@@ -127,7 +127,7 @@ const AboutMeContent = () => {
 
             <p>
                 A few months ago, I started doing{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="highlight"
                     color={purpleShade}
                     show={showAnimations}
@@ -135,14 +135,14 @@ const AboutMeContent = () => {
                     animationDelay={3400}
                 >
                     Open-Source
-                </RoughNotation>
+                </SafeRoughNotation>
                 {"  "}, participated in Hacktoberfest 2023 and contributed to various projects on
                 issues ranging from UI to Debugging to Devops.
             </p>
 
             <p>
                 My best experience so far has been working on{" "}
-                <RoughNotation
+                <SafeRoughNotation
                     type="circle"
                     padding={5}
                     iterations={1}
@@ -159,7 +159,7 @@ const AboutMeContent = () => {
                     >
                         ChatCraft
                     </a>
-                </RoughNotation>
+                </SafeRoughNotation>
                 , an open-source developer oriented AI Chatbot, where I got to work with an
                 incredible team and under the guidance of{" "}
                 <a
