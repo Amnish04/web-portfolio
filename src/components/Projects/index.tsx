@@ -4,7 +4,7 @@ import { Project } from "../../models/Project";
 import Layout from "../Layout";
 import CoffeeMug from "./CoffeeMug";
 import "./Projects.css";
-import TechnologyPill from "../shared/TechnologyPill";
+import TechnologyPill from "../Shared/TechnologyPill";
 
 type ProjectCardProps = {
     project: Project;
