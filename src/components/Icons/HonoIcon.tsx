@@ -1,3 +1,4 @@
+// https://www.streamlinehq.com/icons/download/hono--31103
 export default function HonoIcon() {
     return (
         <svg
