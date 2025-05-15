@@ -1,10 +1,10 @@
-import CircularText from "./Icons";
+import CircularTextIcon from "./Icons/CircularTextIcon";
 import { motion } from "framer-motion";
 
 const AmnishLogo = () => {
     return (
         <div className="relative">
-            <CircularText className="animate-spin-slow" />
+            <CircularTextIcon className="animate-spin-slow" />
 
             {/* Image Logo */}
             <a

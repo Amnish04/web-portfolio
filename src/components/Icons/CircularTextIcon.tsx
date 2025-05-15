@@ -1,8 +1,8 @@
-type IconProps = {
+type CircularTextProps = {
     className?: string;
 };
 
-export default function CircularText({ className = "", ...rest }: IconProps) {
+export default function CircularTextIcon({ className = "", ...rest }: CircularTextProps) {
     return (
         <svg
             className={`${className}`}

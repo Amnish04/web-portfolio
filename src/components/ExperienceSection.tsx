@@ -2,7 +2,7 @@ import { FC, useCallback } from "react";
 import { useExperiences } from "../hooks/use-experiences";
 import { Experience } from "../models/Experience";
 import Layout from "./Layout";
-import TechnologyPill from "./shared/TechnologyPill";
+import TechnologyPill from "./Shared/TechnologyPill";
 import { MdArrowOutward } from "react-icons/md";
 
 type ExperienceCardProps = {
