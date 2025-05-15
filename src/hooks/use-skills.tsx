@@ -268,21 +268,18 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
         []
     );
 
+    const skillsList = useMemo(() => {
+        return Array.from(new Set<Skill>(skills.map((group) => group.skills).flat()));
+    }, [skills]);
+
     const getSkillByName = useCallback(
         (skillName: string) => {
-            const skillsList = new Set<Skill>();
-
-            for (const skillsGroup of skills) {
-                skillsGroup.skills.forEach((skill) => skillsList.add(skill));
-            }
-
             return (
-                Array.from(skillsList).find(
-                    (skill) => skill.name.toLowerCase() === skillName.toLowerCase()
-                ) ?? null
+                skillsList.find((skill) => skill.name.toLowerCase() === skillName.toLowerCase()) ??
+                null
             );
         },
-        [skills]
+        [skillsList]
     );
 
     const value = {
