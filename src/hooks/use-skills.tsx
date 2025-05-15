@@ -1,6 +1,9 @@
 import { FC, ReactNode, createContext, useCallback, useContext, useMemo } from "react";
 import { Skill, Skills } from "../models/Skill";
 import HonoIcon from "../components/Icons/HonoIcon";
+import NatsIcon from "../components/Icons/NatsIcon";
+import LinearIcon from "../components/Icons/LinearIcon";
+import NotionIcon from "../components/Icons/NotionIcon";
 
 export type SkillsGroup = {
     title: string;
@@ -179,6 +182,11 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                         href: "https://kubernetes.io/",
                     }),
                     new Skill({
+                        name: "NATS",
+                        icon: <NatsIcon />,
+                        href: "https://nats.io/",
+                    }),
+                    new Skill({
                         name: "Nginx",
                         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
                         href: "https://nginx.org/en/",
@@ -187,11 +195,6 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                         name: "Firebase",
                         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
                         href: "https://firebase.google.com/",
-                    }),
-                    new Skill({
-                        name: "Linux",
-                        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-                        href: "https://www.linux.org/",
                     }),
                     new Skill({
                         name: "YAML",
@@ -265,7 +268,7 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                     },
                     {
                         name: "Github",
-                        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+                        icon: <i className="devicon-github-original text-[4rem]"></i>,
                         href: "https://github.com/",
                     },
                     {
@@ -277,6 +280,16 @@ export const SkillsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                         name: "Azure Devops",
                         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg",
                         href: "https://azure.microsoft.com/en-us/products/devops",
+                    },
+                    {
+                        name: "Linear",
+                        icon: <LinearIcon />,
+                        href: "https://linear.app/",
+                    },
+                    {
+                        name: "Notion",
+                        icon: <NotionIcon />,
+                        href: "https://www.notion.so/",
                     },
                 ],
             },
