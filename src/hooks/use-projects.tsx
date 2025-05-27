@@ -9,6 +9,14 @@ export const ProjectsProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const value = useMemo(() => {
         return [
             new Project(
+                "eslint-plugin-error-cause",
+                `An ESLint plugin enforcing proper usage of the error cause property when re-throwing exceptions, reporting, and automatically fixing lost error context in JavaScript and Typescript projects. Appreciated by the community, achieving 1000+ NPM downloads within the first week.`,
+                ["TypeScript", "JavaScript", "ESTree (JS AST)", "Static Analysis"],
+                "/images/eslint-plugin-error-cause-og-preview.png",
+                "https://github.com/Amnish04/eslint-plugin-error-cause",
+                "https://dev.to/amnish04/never-lose-valuable-error-context-in-javascript-3aco"
+            ),
+            new Project(
                 "Dine-A-Night",
                 "A restaurant reservation application, where owners can sign up and build dynamic restaurant layouts, customers can make reservations while selecting where they sit, and admins to monitor and analyze upcoming and historical reservations.",
                 [
