@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Layout from "./Layout";
 import SafeRoughNotation from "./SafeRoughNotation";
 
@@ -183,7 +182,7 @@ const AboutMeContent = () => {
 
 const Introduction = () => {
     return (
-        <Layout id="about" className="grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5 lg:gap-0">
+        <Layout id="about" className="grid lg:grid-rows-1 lg:grid-cols-5 py-8 gap-5">
             {/* Intro and Background */}
             <div className="lg:col-span-3 col-span-1 order-2 lg:order-none flex flex-col gap-3">
                 <h2 className="font-headings font-semibold text-3xl">
@@ -199,17 +198,6 @@ const Introduction = () => {
                     src="./images/profile.jpeg"
                     alt="Amnish's Picture"
                 />
-
-                {/* TODO: Extract this into a reusable component */}
-                <a
-                    href="/docs/amnish-web-resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Get my Resume"
-                    className="p-4 border bg-dark text-light rounded-lg flex gap-2 items-center hover:bg-light hover:text-dark border-dark transition-colors duration-200"
-                >
-                    Resume <FaArrowUpRightFromSquare />
-                </a>
             </div>
         </Layout>
     );
